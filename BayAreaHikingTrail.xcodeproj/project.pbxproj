@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0001BB6B1C853FD000339B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001BB6A1C853FD000339B24 /* AppDelegate.swift */; };
+		0001BB6D1C853FD000339B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001BB6C1C853FD000339B24 /* ViewController.swift */; };
+		0001BB701C853FD000339B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001BB6E1C853FD000339B24 /* Main.storyboard */; };
+		0001BB721C853FD000339B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0001BB711C853FD000339B24 /* Assets.xcassets */; };
+		0001BB751C853FD000339B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001BB731C853FD000339B24 /* LaunchScreen.storyboard */; };
+		0001BB801C853FD000339B24 /* BayAreaHikingTrailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001BB7F1C853FD000339B24 /* BayAreaHikingTrailTests.swift */; };
+		0001BB8B1C853FD000339B24 /* BayAreaHikingTrailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001BB8A1C853FD000339B24 /* BayAreaHikingTrailUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0001BB7C1C853FD000339B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0001BB5F1C853FD000339B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0001BB661C853FD000339B24;
+			remoteInfo = BayAreaHikingTrail;
+		};
+		0001BB871C853FD000339B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0001BB5F1C853FD000339B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0001BB661C853FD000339B24;
+			remoteInfo = BayAreaHikingTrail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001BB671C853FD000339B24 /* BayAreaHikingTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BayAreaHikingTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001BB6A1C853FD000339B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0001BB6C1C853FD000339B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0001BB6F1C853FD000339B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0001BB711C853FD000339B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0001BB741C853FD000339B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0001BB761C853FD000339B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0001BB7B1C853FD000339B24 /* BayAreaHikingTrailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayAreaHikingTrailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001BB7F1C853FD000339B24 /* BayAreaHikingTrailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayAreaHikingTrailTests.swift; sourceTree = "<group>"; };
+		0001BB811C853FD000339B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0001BB861C853FD000339B24 /* BayAreaHikingTrailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayAreaHikingTrailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0001BB8A1C853FD000339B24 /* BayAreaHikingTrailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayAreaHikingTrailUITests.swift; sourceTree = "<group>"; };
+		0001BB8C1C853FD000339B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0001BB641C853FD000339B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB781C853FD000339B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB831C853FD000339B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0001BB5E1C853FD000339B24 = {
+			isa = PBXGroup;
+			children = (
+				0001BB691C853FD000339B24 /* BayAreaHikingTrail */,
+				0001BB7E1C853FD000339B24 /* BayAreaHikingTrailTests */,
+				0001BB891C853FD000339B24 /* BayAreaHikingTrailUITests */,
+				0001BB681C853FD000339B24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0001BB681C853FD000339B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0001BB671C853FD000339B24 /* BayAreaHikingTrail.app */,
+				0001BB7B1C853FD000339B24 /* BayAreaHikingTrailTests.xctest */,
+				0001BB861C853FD000339B24 /* BayAreaHikingTrailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0001BB691C853FD000339B24 /* BayAreaHikingTrail */ = {
+			isa = PBXGroup;
+			children = (
+				0001BB6A1C853FD000339B24 /* AppDelegate.swift */,
+				0001BB6C1C853FD000339B24 /* ViewController.swift */,
+				0001BB6E1C853FD000339B24 /* Main.storyboard */,
+				0001BB711C853FD000339B24 /* Assets.xcassets */,
+				0001BB731C853FD000339B24 /* LaunchScreen.storyboard */,
+				0001BB761C853FD000339B24 /* Info.plist */,
+			);
+			path = BayAreaHikingTrail;
+			sourceTree = "<group>";
+		};
+		0001BB7E1C853FD000339B24 /* BayAreaHikingTrailTests */ = {
+			isa = PBXGroup;
+			children = (
+				0001BB7F1C853FD000339B24 /* BayAreaHikingTrailTests.swift */,
+				0001BB811C853FD000339B24 /* Info.plist */,
+			);
+			path = BayAreaHikingTrailTests;
+			sourceTree = "<group>";
+		};
+		0001BB891C853FD000339B24 /* BayAreaHikingTrailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0001BB8A1C853FD000339B24 /* BayAreaHikingTrailUITests.swift */,
+				0001BB8C1C853FD000339B24 /* Info.plist */,
+			);
+			path = BayAreaHikingTrailUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0001BB661C853FD000339B24 /* BayAreaHikingTrail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001BB8F1C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrail" */;
+			buildPhases = (
+				0001BB631C853FD000339B24 /* Sources */,
+				0001BB641C853FD000339B24 /* Frameworks */,
+				0001BB651C853FD000339B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BayAreaHikingTrail;
+			productName = BayAreaHikingTrail;
+			productReference = 0001BB671C853FD000339B24 /* BayAreaHikingTrail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0001BB7A1C853FD000339B24 /* BayAreaHikingTrailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001BB921C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrailTests" */;
+			buildPhases = (
+				0001BB771C853FD000339B24 /* Sources */,
+				0001BB781C853FD000339B24 /* Frameworks */,
+				0001BB791C853FD000339B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0001BB7D1C853FD000339B24 /* PBXTargetDependency */,
+			);
+			name = BayAreaHikingTrailTests;
+			productName = BayAreaHikingTrailTests;
+			productReference = 0001BB7B1C853FD000339B24 /* BayAreaHikingTrailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0001BB851C853FD000339B24 /* BayAreaHikingTrailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0001BB951C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrailUITests" */;
+			buildPhases = (
+				0001BB821C853FD000339B24 /* Sources */,
+				0001BB831C853FD000339B24 /* Frameworks */,
+				0001BB841C853FD000339B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0001BB881C853FD000339B24 /* PBXTargetDependency */,
+			);
+			name = BayAreaHikingTrailUITests;
+			productName = BayAreaHikingTrailUITests;
+			productReference = 0001BB861C853FD000339B24 /* BayAreaHikingTrailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0001BB5F1C853FD000339B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DeAnza;
+				TargetAttributes = {
+					0001BB661C853FD000339B24 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					0001BB7A1C853FD000339B24 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 0001BB661C853FD000339B24;
+					};
+					0001BB851C853FD000339B24 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 0001BB661C853FD000339B24;
+					};
+				};
+			};
+			buildConfigurationList = 0001BB621C853FD000339B24 /* Build configuration list for PBXProject "BayAreaHikingTrail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0001BB5E1C853FD000339B24;
+			productRefGroup = 0001BB681C853FD000339B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0001BB661C853FD000339B24 /* BayAreaHikingTrail */,
+				0001BB7A1C853FD000339B24 /* BayAreaHikingTrailTests */,
+				0001BB851C853FD000339B24 /* BayAreaHikingTrailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0001BB651C853FD000339B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001BB751C853FD000339B24 /* LaunchScreen.storyboard in Resources */,
+				0001BB721C853FD000339B24 /* Assets.xcassets in Resources */,
+				0001BB701C853FD000339B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB791C853FD000339B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB841C853FD000339B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0001BB631C853FD000339B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001BB6D1C853FD000339B24 /* ViewController.swift in Sources */,
+				0001BB6B1C853FD000339B24 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB771C853FD000339B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001BB801C853FD000339B24 /* BayAreaHikingTrailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0001BB821C853FD000339B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0001BB8B1C853FD000339B24 /* BayAreaHikingTrailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0001BB7D1C853FD000339B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0001BB661C853FD000339B24 /* BayAreaHikingTrail */;
+			targetProxy = 0001BB7C1C853FD000339B24 /* PBXContainerItemProxy */;
+		};
+		0001BB881C853FD000339B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0001BB661C853FD000339B24 /* BayAreaHikingTrail */;
+			targetProxy = 0001BB871C853FD000339B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0001BB6E1C853FD000339B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0001BB6F1C853FD000339B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0001BB731C853FD000339B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0001BB741C853FD000339B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0001BB8D1C853FD000339B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0001BB8E1C853FD000339B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0001BB901C853FD000339B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BayAreaHikingTrail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0001BB911C853FD000339B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BayAreaHikingTrail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0001BB931C853FD000339B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BayAreaHikingTrailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayAreaHikingTrail.app/BayAreaHikingTrail";
+			};
+			name = Debug;
+		};
+		0001BB941C853FD000339B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BayAreaHikingTrailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayAreaHikingTrail.app/BayAreaHikingTrail";
+			};
+			name = Release;
+		};
+		0001BB961C853FD000339B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BayAreaHikingTrailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BayAreaHikingTrail;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0001BB971C853FD000339B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BayAreaHikingTrailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.dcovarrubias.BayAreaHikingTrailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BayAreaHikingTrail;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0001BB621C853FD000339B24 /* Build configuration list for PBXProject "BayAreaHikingTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001BB8D1C853FD000339B24 /* Debug */,
+				0001BB8E1C853FD000339B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0001BB8F1C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001BB901C853FD000339B24 /* Debug */,
+				0001BB911C853FD000339B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0001BB921C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001BB931C853FD000339B24 /* Debug */,
+				0001BB941C853FD000339B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0001BB951C853FD000339B24 /* Build configuration list for PBXNativeTarget "BayAreaHikingTrailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0001BB961C853FD000339B24 /* Debug */,
+				0001BB971C853FD000339B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0001BB5F1C853FD000339B24 /* Project object */;
+}
