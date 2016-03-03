@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D95D411C88BE1A00FE0D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */; };
+		00D95D431C88BE1A00FE0D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D421C88BE1A00FE0D69 /* ViewController.swift */; };
+		00D95D461C88BE1A00FE0D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D441C88BE1A00FE0D69 /* Main.storyboard */; };
+		00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D471C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld */; };
+		00D95D4B1C88BE1A00FE0D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */; };
+		00D95D4E1C88BE1A00FE0D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D4C1C88BE1A00FE0D69 /* LaunchScreen.storyboard */; };
+		00D95D591C88BE1A00FE0D69 /* HikingJunkieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D581C88BE1A00FE0D69 /* HikingJunkieTests.swift */; };
+		00D95D641C88BE1A00FE0D69 /* HikingJunkieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D631C88BE1A00FE0D69 /* HikingJunkieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D95D551C88BE1A00FE0D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D95D351C88BE1A00FE0D69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D95D3C1C88BE1A00FE0D69;
+			remoteInfo = HikingJunkie;
+		};
+		00D95D601C88BE1A00FE0D69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D95D351C88BE1A00FE0D69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D95D3C1C88BE1A00FE0D69;
+			remoteInfo = HikingJunkie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D95D3D1C88BE1A00FE0D69 /* HikingJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00D95D421C88BE1A00FE0D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00D95D451C88BE1A00FE0D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00D95D481C88BE1A00FE0D69 /* HikingJunkie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HikingJunkie.xcdatamodel; sourceTree = "<group>"; };
+		00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00D95D4D1C88BE1A00FE0D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00D95D4F1C88BE1A00FE0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D95D541C88BE1A00FE0D69 /* HikingJunkieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingJunkieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D95D581C88BE1A00FE0D69 /* HikingJunkieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingJunkieTests.swift; sourceTree = "<group>"; };
+		00D95D5A1C88BE1A00FE0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D95D5F1C88BE1A00FE0D69 /* HikingJunkieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingJunkieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D95D631C88BE1A00FE0D69 /* HikingJunkieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingJunkieUITests.swift; sourceTree = "<group>"; };
+		00D95D651C88BE1A00FE0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D95D3A1C88BE1A00FE0D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D511C88BE1A00FE0D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D5C1C88BE1A00FE0D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D95D341C88BE1A00FE0D69 = {
+			isa = PBXGroup;
+			children = (
+				00D95D3F1C88BE1A00FE0D69 /* HikingJunkie */,
+				00D95D571C88BE1A00FE0D69 /* HikingJunkieTests */,
+				00D95D621C88BE1A00FE0D69 /* HikingJunkieUITests */,
+				00D95D3E1C88BE1A00FE0D69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00D95D3E1C88BE1A00FE0D69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00D95D3D1C88BE1A00FE0D69 /* HikingJunkie.app */,
+				00D95D541C88BE1A00FE0D69 /* HikingJunkieTests.xctest */,
+				00D95D5F1C88BE1A00FE0D69 /* HikingJunkieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00D95D3F1C88BE1A00FE0D69 /* HikingJunkie */ = {
+			isa = PBXGroup;
+			children = (
+				00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */,
+				00D95D421C88BE1A00FE0D69 /* ViewController.swift */,
+				00D95D441C88BE1A00FE0D69 /* Main.storyboard */,
+				00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */,
+				00D95D4C1C88BE1A00FE0D69 /* LaunchScreen.storyboard */,
+				00D95D4F1C88BE1A00FE0D69 /* Info.plist */,
+				00D95D471C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld */,
+			);
+			path = HikingJunkie;
+			sourceTree = "<group>";
+		};
+		00D95D571C88BE1A00FE0D69 /* HikingJunkieTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D95D581C88BE1A00FE0D69 /* HikingJunkieTests.swift */,
+				00D95D5A1C88BE1A00FE0D69 /* Info.plist */,
+			);
+			path = HikingJunkieTests;
+			sourceTree = "<group>";
+		};
+		00D95D621C88BE1A00FE0D69 /* HikingJunkieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00D95D631C88BE1A00FE0D69 /* HikingJunkieUITests.swift */,
+				00D95D651C88BE1A00FE0D69 /* Info.plist */,
+			);
+			path = HikingJunkieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00D95D3C1C88BE1A00FE0D69 /* HikingJunkie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D95D681C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkie" */;
+			buildPhases = (
+				00D95D391C88BE1A00FE0D69 /* Sources */,
+				00D95D3A1C88BE1A00FE0D69 /* Frameworks */,
+				00D95D3B1C88BE1A00FE0D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikingJunkie;
+			productName = HikingJunkie;
+			productReference = 00D95D3D1C88BE1A00FE0D69 /* HikingJunkie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00D95D531C88BE1A00FE0D69 /* HikingJunkieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D95D6B1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieTests" */;
+			buildPhases = (
+				00D95D501C88BE1A00FE0D69 /* Sources */,
+				00D95D511C88BE1A00FE0D69 /* Frameworks */,
+				00D95D521C88BE1A00FE0D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D95D561C88BE1A00FE0D69 /* PBXTargetDependency */,
+			);
+			name = HikingJunkieTests;
+			productName = HikingJunkieTests;
+			productReference = 00D95D541C88BE1A00FE0D69 /* HikingJunkieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00D95D5E1C88BE1A00FE0D69 /* HikingJunkieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D95D6E1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieUITests" */;
+			buildPhases = (
+				00D95D5B1C88BE1A00FE0D69 /* Sources */,
+				00D95D5C1C88BE1A00FE0D69 /* Frameworks */,
+				00D95D5D1C88BE1A00FE0D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D95D611C88BE1A00FE0D69 /* PBXTargetDependency */,
+			);
+			name = HikingJunkieUITests;
+			productName = HikingJunkieUITests;
+			productReference = 00D95D5F1C88BE1A00FE0D69 /* HikingJunkieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D95D351C88BE1A00FE0D69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DeAnza;
+				TargetAttributes = {
+					00D95D3C1C88BE1A00FE0D69 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					00D95D531C88BE1A00FE0D69 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 00D95D3C1C88BE1A00FE0D69;
+					};
+					00D95D5E1C88BE1A00FE0D69 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 00D95D3C1C88BE1A00FE0D69;
+					};
+				};
+			};
+			buildConfigurationList = 00D95D381C88BE1A00FE0D69 /* Build configuration list for PBXProject "HikingJunkie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00D95D341C88BE1A00FE0D69;
+			productRefGroup = 00D95D3E1C88BE1A00FE0D69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D95D3C1C88BE1A00FE0D69 /* HikingJunkie */,
+				00D95D531C88BE1A00FE0D69 /* HikingJunkieTests */,
+				00D95D5E1C88BE1A00FE0D69 /* HikingJunkieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D95D3B1C88BE1A00FE0D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D95D4E1C88BE1A00FE0D69 /* LaunchScreen.storyboard in Resources */,
+				00D95D4B1C88BE1A00FE0D69 /* Assets.xcassets in Resources */,
+				00D95D461C88BE1A00FE0D69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D521C88BE1A00FE0D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D5D1C88BE1A00FE0D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D95D391C88BE1A00FE0D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D95D431C88BE1A00FE0D69 /* ViewController.swift in Sources */,
+				00D95D411C88BE1A00FE0D69 /* AppDelegate.swift in Sources */,
+				00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D501C88BE1A00FE0D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D95D591C88BE1A00FE0D69 /* HikingJunkieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D95D5B1C88BE1A00FE0D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D95D641C88BE1A00FE0D69 /* HikingJunkieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D95D561C88BE1A00FE0D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D95D3C1C88BE1A00FE0D69 /* HikingJunkie */;
+			targetProxy = 00D95D551C88BE1A00FE0D69 /* PBXContainerItemProxy */;
+		};
+		00D95D611C88BE1A00FE0D69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D95D3C1C88BE1A00FE0D69 /* HikingJunkie */;
+			targetProxy = 00D95D601C88BE1A00FE0D69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00D95D441C88BE1A00FE0D69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D95D451C88BE1A00FE0D69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00D95D4C1C88BE1A00FE0D69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D95D4D1C88BE1A00FE0D69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00D95D661C88BE1B00FE0D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00D95D671C88BE1B00FE0D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00D95D691C88BE1B00FE0D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikingJunkie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00D95D6A1C88BE1B00FE0D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikingJunkie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00D95D6C1C88BE1B00FE0D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikingJunkieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikingJunkie.app/HikingJunkie";
+			};
+			name = Debug;
+		};
+		00D95D6D1C88BE1B00FE0D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikingJunkieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikingJunkie.app/HikingJunkie";
+			};
+			name = Release;
+		};
+		00D95D6F1C88BE1B00FE0D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikingJunkieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikingJunkie;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		00D95D701C88BE1B00FE0D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikingJunkieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikingJunkie;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D95D381C88BE1A00FE0D69 /* Build configuration list for PBXProject "HikingJunkie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D95D661C88BE1B00FE0D69 /* Debug */,
+				00D95D671C88BE1B00FE0D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D95D681C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D95D691C88BE1B00FE0D69 /* Debug */,
+				00D95D6A1C88BE1B00FE0D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00D95D6B1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D95D6C1C88BE1B00FE0D69 /* Debug */,
+				00D95D6D1C88BE1B00FE0D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00D95D6E1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D95D6F1C88BE1B00FE0D69 /* Debug */,
+				00D95D701C88BE1B00FE0D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00D95D471C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00D95D481C88BE1A00FE0D69 /* HikingJunkie.xcdatamodel */,
+			);
+			currentVersion = 00D95D481C88BE1A00FE0D69 /* HikingJunkie.xcdatamodel */;
+			path = HikingJunkie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00D95D351C88BE1A00FE0D69 /* Project object */;
+}
