@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ObjectController: NSObject {
     var iFile1 = ""

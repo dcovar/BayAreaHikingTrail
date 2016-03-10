@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="ObjectController" representedClassName=".ObjectController" syncable="YES">
+        <attribute name="iAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iDetail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iDifficulty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iExposure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iFile1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iFile2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iFile3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iFile4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iLength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iRule" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSeason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSurface" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iTraffic" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ObjectController" positionX="-63" positionY="-18" width="128" height="285"/>
+    </elements>
+</model>
