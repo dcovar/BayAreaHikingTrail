@@ -44,6 +44,7 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
         self.searchController.dimsBackgroundDuringPresentation = false
         self.tableView.tableHeaderView = self.searchController.searchBar
         
+        
         let fr = NSFetchRequest(entityName: "Trail")
         let e: NSError? = nil
         
@@ -58,7 +59,13 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             
         }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.tableHeaderView = self.searchController.searchBar
+    }
     override func viewDidAppear(animated: Bool) {
+
+        
         let fr = NSFetchRequest(entityName: "Trail")
         let e: NSError? = nil
         
@@ -72,6 +79,7 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             self.tableView.reloadData()
             
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
