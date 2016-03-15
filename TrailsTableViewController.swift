@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TrailsTableViewController: UITableViewController, UISearchResultsUpdating {
+class TrailsTableViewController: UITableViewController, UISearchResultsUpdating, NSFetchedResultsControllerDelegate {
 
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     @IBOutlet var menuButton: UIBarButtonItem!
@@ -17,6 +17,8 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
     var trails:[Trail]?
     var searchController: UISearchController!
     var searchResults: [Trail] = []
+    
+    var frc: NSFetchedResultsController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,18 +48,27 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
         
         
         let fr = NSFetchRequest(entityName: "Trail")
-        let e: NSError? = nil
+
+        let sd = NSSortDescriptor(key: "tName", ascending: true)
+        fr.sortDescriptors = [sd]
+        frc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
+        frc.delegate = self
         
-        trails = (try! moc.executeFetchRequest(fr)) as! [Trail]
-        
-        if e != nil{
-            print("viewDidAppear Failed to retrieve record: \(e!.localizedDescription)")
+        //var fetchResult = try! frc.performFetch()
+        do{
+            let fetchResult = try frc.performFetch()
+        }catch let error as NSError{
+            print(error)
+            return
         }
-        else{
-            
+        
+        //trails = (try! moc.executeFetchRequest(fr)) as! [Trail]
+        trails =  frc.fetchedObjects as! [Trail]
+
+        
             self.tableView.reloadData()
             
-        }
+//        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -67,18 +78,24 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
 
         
         let fr = NSFetchRequest(entityName: "Trail")
-        let e: NSError? = nil
         
-        trails = (try! moc.executeFetchRequest(fr)) as! [Trail]
+        let sd = NSSortDescriptor(key: "tName", ascending: true)
+        fr.sortDescriptors = [sd]
+        frc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
+        frc.delegate = self
         
-        if e != nil{
-            print("viewDidAppear Failed to retrieve record: \(e!.localizedDescription)")
+        //var fetchResult = try! frc.performFetch()
+        do{
+            let fetchResult = try frc.performFetch()
+        }catch let error as NSError{
+            print(error)
+            return
         }
-        else{
-            
+            trails =  frc.fetchedObjects as! [Trail]
+        
             self.tableView.reloadData()
             
-        }
+
         
     }
 
@@ -104,7 +121,7 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             if (trails?.count > 0){
                 return trails!.count
             }
-            return 1
+            return 0
         }
     }
 
@@ -132,25 +149,28 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
     }
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            let itemToDelete = frc.objectAtIndexPath(indexPath) as! Trail
+            moc.deleteObject(itemToDelete)
+            try! moc.save()
+            
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -208,5 +228,31 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             tableView.reloadData()
         }
     }
-
+    
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        tableView.beginUpdates()
+    }
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        switch type{
+        case .Insert:
+            tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case .Delete:
+            print(indexPath)
+            print(newIndexPath)
+            var x: [NSIndexPath] = []
+            x.append(indexPath!)
+            tableView.deleteRowsAtIndexPaths(x, withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case .Update:
+        tableView.reloadRowsAtIndexPaths([newIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        default:
+            tableView.reloadData()
+    }
+        trails = controller.fetchedObjects as! [Trail]
+    }
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.endUpdates()
+    }
 }
