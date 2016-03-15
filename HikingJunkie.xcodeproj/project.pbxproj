@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000177241C8E725F008E3B26 /* DetailTabBarController.swift */; };
+		00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */; };
+		00B284541C93551B00FE3D34 /* DetailDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */; };
+		00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284551C93559300FE3D34 /* DetailImagesViewController.swift */; };
+		00B284581C935D2D00FE3D34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284571C935D2D00FE3D34 /* CoreLocation.framework */; };
+		00B2845A1C935D3E00FE3D34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284591C935D3E00FE3D34 /* MapKit.framework */; };
 		00D95D411C88BE1A00FE0D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */; };
-		00D95D431C88BE1A00FE0D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D421C88BE1A00FE0D69 /* ViewController.swift */; };
 		00D95D461C88BE1A00FE0D69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D441C88BE1A00FE0D69 /* Main.storyboard */; };
 		00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D471C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld */; };
 		00D95D4B1C88BE1A00FE0D69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */; };
 		00D95D4E1C88BE1A00FE0D69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D95D4C1C88BE1A00FE0D69 /* LaunchScreen.storyboard */; };
 		00D95D591C88BE1A00FE0D69 /* HikingJunkieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D581C88BE1A00FE0D69 /* HikingJunkieTests.swift */; };
 		00D95D641C88BE1A00FE0D69 /* HikingJunkieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D631C88BE1A00FE0D69 /* HikingJunkieUITests.swift */; };
+		00D95D721C88BE6800FE0D69 /* TrailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */; };
+		00D95D781C88C4AB00FE0D69 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95D771C88C4AB00FE0D69 /* Trail.swift */; };
+		00E3200B1C976A4C004DBE2D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200A1C976A4C004DBE2D /* SWRevealViewController.m */; };
+		00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200C1C976B6D004DBE2D /* MenuViewController.swift */; };
+		00E3200F1C977617004DBE2D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200E1C977617004DBE2D /* FavoritesViewController.swift */; };
+		00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E320101C97781E004DBE2D /* TrailEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000177241C8E725F008E3B26 /* DetailTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTabBarController.swift; sourceTree = "<group>"; };
+		00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewController.swift; path = ../DetailInfoViewController.swift; sourceTree = "<group>"; };
+		00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailDirectionsViewController.swift; path = ../DetailDirectionsViewController.swift; sourceTree = "<group>"; };
+		00B284551C93559300FE3D34 /* DetailImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailImagesViewController.swift; path = ../DetailImagesViewController.swift; sourceTree = "<group>"; };
+		00B284571C935D2D00FE3D34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		00B284591C935D3E00FE3D34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		00D95D3D1C88BE1A00FE0D69 /* HikingJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00D95D421C88BE1A00FE0D69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00D95D451C88BE1A00FE0D69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00D95D481C88BE1A00FE0D69 /* HikingJunkie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HikingJunkie.xcdatamodel; sourceTree = "<group>"; };
 		00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,14 @@
 		00D95D5F1C88BE1A00FE0D69 /* HikingJunkieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingJunkieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D95D631C88BE1A00FE0D69 /* HikingJunkieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingJunkieUITests.swift; sourceTree = "<group>"; };
 		00D95D651C88BE1A00FE0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrailsTableViewController.swift; path = ../TrailsTableViewController.swift; sourceTree = "<group>"; };
+		00D95D771C88C4AB00FE0D69 /* Trail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trail.swift; sourceTree = "<group>"; };
+		00E320081C976A33004DBE2D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		00E320091C976A4B004DBE2D /* HikingJunkie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HikingJunkie-Bridging-Header.h"; sourceTree = "<group>"; };
+		00E3200A1C976A4C004DBE2D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		00E3200C1C976B6D004DBE2D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		00E3200E1C977617004DBE2D /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		00E320101C97781E004DBE2D /* TrailEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B2845A1C935D3E00FE3D34 /* MapKit.framework in Frameworks */,
+				00B284581C935D2D00FE3D34 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +105,8 @@
 		00D95D341C88BE1A00FE0D69 = {
 			isa = PBXGroup;
 			children = (
+				00B284591C935D3E00FE3D34 /* MapKit.framework */,
+				00B284571C935D2D00FE3D34 /* CoreLocation.framework */,
 				00D95D3F1C88BE1A00FE0D69 /* HikingJunkie */,
 				00D95D571C88BE1A00FE0D69 /* HikingJunkieTests */,
 				00D95D621C88BE1A00FE0D69 /* HikingJunkieUITests */,
@@ -99,9 +127,18 @@
 		00D95D3F1C88BE1A00FE0D69 /* HikingJunkie */ = {
 			isa = PBXGroup;
 			children = (
+				00E320071C9769F9004DBE2D /* SWRevealViewController */,
 				00D95D401C88BE1A00FE0D69 /* AppDelegate.swift */,
-				00D95D421C88BE1A00FE0D69 /* ViewController.swift */,
+				000177241C8E725F008E3B26 /* DetailTabBarController.swift */,
+				00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */,
+				00B284551C93559300FE3D34 /* DetailImagesViewController.swift */,
+				00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */,
+				00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */,
+				00E3200E1C977617004DBE2D /* FavoritesViewController.swift */,
+				00E320101C97781E004DBE2D /* TrailEditorViewController.swift */,
+				00E3200C1C976B6D004DBE2D /* MenuViewController.swift */,
 				00D95D441C88BE1A00FE0D69 /* Main.storyboard */,
+				00D95D771C88C4AB00FE0D69 /* Trail.swift */,
 				00D95D4A1C88BE1A00FE0D69 /* Assets.xcassets */,
 				00D95D4C1C88BE1A00FE0D69 /* LaunchScreen.storyboard */,
 				00D95D4F1C88BE1A00FE0D69 /* Info.plist */,
@@ -126,6 +163,16 @@
 				00D95D651C88BE1A00FE0D69 /* Info.plist */,
 			);
 			path = HikingJunkieUITests;
+			sourceTree = "<group>";
+		};
+		00E320071C9769F9004DBE2D /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00E3200A1C976A4C004DBE2D /* SWRevealViewController.m */,
+				00E320081C976A33004DBE2D /* SWRevealViewController.h */,
+				00E320091C976A4B004DBE2D /* HikingJunkie-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +306,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00D95D431C88BE1A00FE0D69 /* ViewController.swift in Sources */,
 				00D95D411C88BE1A00FE0D69 /* AppDelegate.swift in Sources */,
+				00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */,
+				00D95D721C88BE6800FE0D69 /* TrailsTableViewController.swift in Sources */,
+				000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */,
+				00D95D781C88C4AB00FE0D69 /* Trail.swift in Sources */,
+				00B284541C93551B00FE3D34 /* DetailDirectionsViewController.swift in Sources */,
+				00E3200F1C977617004DBE2D /* FavoritesViewController.swift in Sources */,
+				00E3200B1C976A4C004DBE2D /* SWRevealViewController.m in Sources */,
+				00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */,
 				00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */,
+				00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */,
+				00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HikingJunkie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HikingJunkie/HikingJunkie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +471,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HikingJunkie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.team4.HikingJunkie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HikingJunkie/HikingJunkie-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +547,7 @@
 				00D95D6A1C88BE1B00FE0D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D95D6B1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +556,7 @@
 				00D95D6D1C88BE1B00FE0D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D95D6E1C88BE1B00FE0D69 /* Build configuration list for PBXNativeTarget "HikingJunkieUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +565,7 @@
 				00D95D701C88BE1B00FE0D69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

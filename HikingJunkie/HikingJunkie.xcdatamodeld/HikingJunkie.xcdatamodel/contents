@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Trail" representedClassName=".Trail" syncable="YES">
+        <attribute name="tAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDifficulty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tExposure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tPhoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tPictures" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tRules" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tSeason" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tSurface" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tTraffic" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Trail" positionX="-63" positionY="-18" width="128" height="255"/>
+    </elements>
 </model>
