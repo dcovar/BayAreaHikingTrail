@@ -29,6 +29,7 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             self.revealViewController().rearViewRevealWidth = 150
         }
         
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -105,9 +106,10 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
 
         // Configure the cell...
         
-        var trailItem: Trail!
+        //var trailItem: Trail!
         if searchController.active{
-            trailItem = searchResults[indexPath.row]
+            //trailItem = searchResults[indexPath.row]
+            cell.textLabel!.text = searchResults[indexPath.row].tName
         }
         else{
              if (trails?.count > 0){
@@ -169,7 +171,13 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating 
             if let indPath = self.tableView.indexPathForSelectedRow{
                 searchController.view.removeFromSuperview()
                 let detailViewController = segue.destinationViewController as! DetailTabBarController
-                //detailViewController.selectedTrail = trails![indPath.row]
+                
+                if searchController.active{
+                    detailViewController.selectedTrail = searchResults[indPath.row]
+                }
+                else{
+                detailViewController.selectedTrail = trails![indPath.row]
+                }
             }
         }
     }
