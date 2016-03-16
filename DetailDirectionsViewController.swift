@@ -28,7 +28,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
     
     @IBOutlet weak var showRouteButton: UIButton!
     
-    @IBAction func getDirections(sender: AnyObject) {
+    @IBAction func showRoute(sender: AnyObject) {
         self.getCurrentLocation()
         return
 
@@ -80,7 +80,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
                         self.mapView.showAnnotations([annotation], animated: true)
                         //done with second geocoding
                         self.showDirections()
-                        self.showRouteButton.hidden = false
+                        self.directionsButton.hidden = false
                     }
                 })
                 
@@ -155,7 +155,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
         mapView.delegate = self
 
         // Do any additional setup after loading the view.
-        self.showRouteButton.hidden = true
+        self.directionsButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -171,7 +171,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "ShowRoute"{
+        if segue.identifier == "ShowDirections"{
             let routeViewController = segue.destinationViewController as! RouteViewController
             routeViewController.route = endAddrString
         }
