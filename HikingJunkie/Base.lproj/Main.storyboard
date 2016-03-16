@@ -235,7 +235,7 @@
                                 <animations/>
                                 <state key="normal" title="Get Directions"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="151" y="477" width="98" height="30"/>
+                                    <rect key="frame" x="151" y="508" width="98" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="getDirections:" destination="UjN-aE-km0" eventType="touchUpInside" id="yWL-ui-Kh6"/>
@@ -270,6 +270,17 @@
                                     <rect key="frame" x="152" y="401" width="97" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-vk-HrI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show Route"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="159" y="477" width="82" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="S77-xV-Vrv" kind="show" identifier="ShowRoute" id="JEo-fU-TLt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,6 +292,7 @@
                                 <exclude reference="Bzg-fe-uih"/>
                                 <exclude reference="Wpe-VB-0mY"/>
                                 <exclude reference="Pm8-gR-sNS"/>
+                                <exclude reference="Sg3-vk-HrI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -291,20 +303,69 @@
                                 <include reference="Bzg-fe-uih"/>
                                 <include reference="Wpe-VB-0mY"/>
                                 <include reference="Pm8-gR-sNS"/>
+                                <include reference="Sg3-vk-HrI"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Directions" id="6Jk-js-OBe" userLabel="Directions"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="directionsButton" destination="VcZ-Su-PMu" id="xGs-0O-8tO"/>
                         <outlet property="endAddress" destination="RCY-cG-O4H" id="HEF-Qf-ZUI"/>
                         <outlet property="mapView" destination="YcH-nG-isi" id="4NN-jf-kCi"/>
+                        <outlet property="showRouteButton" destination="Sg3-vk-HrI" id="Km1-gG-b4E"/>
                         <outlet property="startAddress" destination="Pm8-gR-sNS" id="8Dr-RW-9Be"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hvf-cp-KtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2166" y="1214"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="mCJ-fz-qAZ">
+            <objects>
+                <viewController id="S77-xV-Vrv" customClass="RouteViewController" customModule="HikingJunkie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yuf-jI-XMC"/>
+                        <viewControllerLayoutGuide type="bottom" id="4vL-mB-SUR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="19F-1j-syM">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6KZ-Xv-n28">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="155" width="240" height="271"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6KZ-Xv-n28"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6KZ-Xv-n28"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pkx-fV-7d1"/>
+                    <connections>
+                        <outlet property="routeTextView" destination="6KZ-Xv-n28" id="uRK-b1-GIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dl-cz-VaM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3252" y="1228"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="sN5-J5-b3x">

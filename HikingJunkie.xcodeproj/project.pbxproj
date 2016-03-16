@@ -26,6 +26,7 @@
 		00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200C1C976B6D004DBE2D /* MenuViewController.swift */; };
 		00E3200F1C977617004DBE2D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200E1C977617004DBE2D /* FavoritesViewController.swift */; };
 		00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E320101C97781E004DBE2D /* TrailEditorViewController.swift */; };
+		00FCCC7C1C98F99C0010D652 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		00E3200C1C976B6D004DBE2D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00E3200E1C977617004DBE2D /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		00E320101C97781E004DBE2D /* TrailEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailEditorViewController.swift; sourceTree = "<group>"; };
+		00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */,
 				00B284551C93559300FE3D34 /* DetailImagesViewController.swift */,
 				00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */,
+				00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */,
 				00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */,
 				00E3200E1C977617004DBE2D /* FavoritesViewController.swift */,
 				00E320101C97781E004DBE2D /* TrailEditorViewController.swift */,
@@ -318,6 +321,7 @@
 				00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */,
 				00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */,
 				00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */,
+				00FCCC7C1C98F99C0010D652 /* RouteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

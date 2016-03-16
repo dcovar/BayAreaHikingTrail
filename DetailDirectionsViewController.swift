@@ -18,105 +18,122 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
     @IBOutlet var endAddress: UITextField!
     @IBOutlet var directionsButton: UIButton!
     
-    var start:String?
-    var end:String?
+    var startAddrString:String?
+    var endAddrString:String?
     
     var locationManager = CLLocationManager()
     var geoCoder = CLGeocoder()
     var startPlacemark :CLPlacemark?
     var endPlacemark :CLPlacemark?
     
+    @IBOutlet weak var showRouteButton: UIButton!
+    
     @IBAction func getDirections(sender: AnyObject) {
         self.getCurrentLocation()
-        self.getDestinationLocation()
-        
-        //print(startPlacemark?.locality)
-        //print(endPlacemark?.locality)
-        
-        if self.endPlacemark?.locality?.isEmpty == false && self.startPlacemark?.locality?.isEmpty == false
-        {
-            let directionRequest = MKDirectionsRequest()
-            let currentTransportType = MKDirectionsTransportType.Automobile
-            var currentRoute : MKRoute?
-        
-            let sourcePlacemark = MKPlacemark(placemark: startPlacemark!)
-            directionRequest.source = MKMapItem(placemark: sourcePlacemark)
-            
-            let destinationPlacemark = MKPlacemark(placemark: endPlacemark!)
-            directionRequest.destination = MKMapItem(placemark: destinationPlacemark)
-            
-            directionRequest.transportType = currentTransportType
-        
-            let directions = MKDirections(request: directionRequest) as MKDirections
-            directions.calculateDirectionsWithCompletionHandler{(routeResponse, routeError) in
-                if routeError != nil{
-                    print("Error: \(routeError?.localizedDescription)")
-                }
-                else{
-                    let route = routeResponse?.routes[0] as MKRoute!
-                    currentRoute = route
-                    self.mapView.removeOverlays(self.mapView.overlays)
-                    self.mapView.addOverlay(route.polyline, level: MKOverlayLevel.AboveRoads)
-                
-                    let rect = route.polyline.boundingMapRect
-                    self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
-                
-                    if let steps = currentRoute?.steps as [MKRouteStep]!{
-                        for step in 0..<steps.count{
-                        
-                        }
-                    }
-                }
-            }
-        }
-        else{
-            print("no location found")
-        }
+        return
+
     }
     
     func getCurrentLocation(){
-        self.start = self.startAddress!.text
+        self.startAddrString = self.startAddress!.text
+        self.endAddrString = self.endAddress!.text
         
-        geoCoder.geocodeAddressString(start!, completionHandler: {
+        geoCoder.geocodeAddressString(startAddrString!, completionHandler: {
             placemarks, error in
             if error != nil{
                 print(error)
                 return
             }
             if placemarks != nil && placemarks!.count > 0 {
-                let placemark = placemarks![0] as CLPlacemark
-                self.startPlacemark = placemark as CLPlacemark
-                
-                let annotation = MKPointAnnotation()
-                annotation.title = "Starting Point"
-                annotation.subtitle = self.start
-                annotation.coordinate = placemark.location!.coordinate
-                
-                self.mapView.showAnnotations([annotation], animated: true)
-            }
-        })
-    }
-    func getDestinationLocation(){
-        self.end = self.endAddress!.text
-
-        geoCoder.geocodeAddressString(end!, completionHandler: {
-            placemarks, error in
-            if error != nil{
-                print(error)
-                return
-            }
-            if placemarks != nil && placemarks!.count > 0 {
+                print("Inside!!")
                 let placemark = placemarks![0] as CLPlacemark
                 self.startPlacemark = placemark
                 
                 let annotation = MKPointAnnotation()
-                annotation.title = "Destination Point"
-                annotation.subtitle = self.start
+                annotation.title = "Starting Point"
+                annotation.subtitle = self.startAddrString
                 annotation.coordinate = placemark.location!.coordinate
+                print(annotation.coordinate)
+                print("AA")
                 
                 self.mapView.showAnnotations([annotation], animated: true)
+                // done with 1st geocoding
+                self.geoCoder.geocodeAddressString(self.endAddrString!, completionHandler: {
+                    placemarks, error in
+                    if error != nil{
+                        print(error)
+                        return
+                    }
+                    
+                    if placemarks != nil && placemarks!.count > 0 {
+                        print("InsideB!!")
+                        let placemark = placemarks![0] as CLPlacemark
+                        self.endPlacemark = placemark
+                        
+                        let annotation = MKPointAnnotation()
+                        annotation.title = "Ending Point"
+                        annotation.subtitle = self.endAddrString
+                        annotation.coordinate = placemark.location!.coordinate
+                        print(annotation.coordinate)
+                        print("BB")
+                        
+                        self.mapView.showAnnotations([annotation], animated: true)
+                        //done with second geocoding
+                        self.showDirections()
+                        self.showRouteButton.hidden = false
+                    }
+                })
+                
             }
         })
+
+        print("Outside gecoding")
+        
+        
+    }
+    func showDirections(){
+        let directionRequest = MKDirectionsRequest()
+        let currentTransportType = MKDirectionsTransportType.Automobile
+        var currentRoute : MKRoute?
+        self.endAddrString = ""
+        
+//        let sourcePlacemark = MKPlacemark(placemark: startPlacemark!)
+        directionRequest.source = MKMapItem(placemark: MKPlacemark(placemark: self.startPlacemark!))
+        
+        let sPlacemark = MKPlacemark(placemark: startPlacemark!)
+        directionRequest.destination = MKMapItem(placemark: MKPlacemark(placemark: self.endPlacemark!))
+        
+        directionRequest.transportType = currentTransportType
+        
+        let directions = MKDirections(request: directionRequest) as MKDirections
+        directions.calculateDirectionsWithCompletionHandler{(routeResponse, routeError) in
+            if routeError != nil{
+                print("Error: \(routeError?.localizedDescription)")
+            }
+            else{
+                let route = routeResponse?.routes[0] as MKRoute!
+                currentRoute = route
+                self.mapView.removeOverlays(self.mapView.overlays)
+                self.mapView.addOverlay(route.polyline, level: MKOverlayLevel.AboveRoads)
+                
+                let rect = route.polyline.boundingMapRect
+                self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+                
+                if let steps = currentRoute?.steps as [MKRouteStep]!{
+                    for step in 0..<steps.count{
+                        self.endAddrString = self.endAddrString! + "\n" + steps[step].instructions
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blueColor()
+        renderer.lineWidth = 3.0
+        return renderer
     }
     
     override func viewDidLoad() {
@@ -138,6 +155,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
         mapView.delegate = self
 
         // Do any additional setup after loading the view.
+        self.showRouteButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -146,14 +164,18 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowRoute"{
+            let routeViewController = segue.destinationViewController as! RouteViewController
+            routeViewController.route = endAddrString
+        }
     }
-    */
+    
 
 }
