@@ -22,7 +22,10 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        // RUN THIS ONCE TO BUILD INITIAL DATA
+        // could become part of future reset funcitonality
+        // var x = Trail(insertIntoManagedObjectContext: moc)
 
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -67,8 +70,7 @@ class TrailsTableViewController: UITableViewController, UISearchResultsUpdating,
 
         
             self.tableView.reloadData()
-            
-//        }
+
     }
     
     override func viewWillAppear(animated: Bool) {
