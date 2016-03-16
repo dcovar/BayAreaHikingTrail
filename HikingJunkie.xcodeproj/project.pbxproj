@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000177241C8E725F008E3B26 /* DetailTabBarController.swift */; };
 		00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */; };
-		00B284541C93551B00FE3D34 /* DetailDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */; };
+		00B284541C93551B00FE3D34 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284531C93551B00FE3D34 /* DetailMapViewController.swift */; };
 		00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284551C93559300FE3D34 /* DetailImagesViewController.swift */; };
 		00B284581C935D2D00FE3D34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284571C935D2D00FE3D34 /* CoreLocation.framework */; };
 		00B2845A1C935D3E00FE3D34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284591C935D3E00FE3D34 /* MapKit.framework */; };
@@ -26,7 +26,7 @@
 		00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200C1C976B6D004DBE2D /* MenuViewController.swift */; };
 		00E3200F1C977617004DBE2D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200E1C977617004DBE2D /* FavoritesViewController.swift */; };
 		00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E320101C97781E004DBE2D /* TrailEditorViewController.swift */; };
-		00FCCC7C1C98F99C0010D652 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */; };
+		00FCCC7C1C98F99C0010D652 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FCCC7B1C98F99C0010D652 /* DirectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		000177241C8E725F008E3B26 /* DetailTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTabBarController.swift; sourceTree = "<group>"; };
 		00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewController.swift; path = ../DetailInfoViewController.swift; sourceTree = "<group>"; };
-		00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailDirectionsViewController.swift; path = ../DetailDirectionsViewController.swift; sourceTree = "<group>"; };
+		00B284531C93551B00FE3D34 /* DetailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailMapViewController.swift; path = ../DetailMapViewController.swift; sourceTree = "<group>"; };
 		00B284551C93559300FE3D34 /* DetailImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailImagesViewController.swift; path = ../DetailImagesViewController.swift; sourceTree = "<group>"; };
 		00B284571C935D2D00FE3D34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00B284591C935D3E00FE3D34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -74,7 +74,7 @@
 		00E3200C1C976B6D004DBE2D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00E3200E1C977617004DBE2D /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		00E320101C97781E004DBE2D /* TrailEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailEditorViewController.swift; sourceTree = "<group>"; };
-		00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		00FCCC7B1C98F99C0010D652 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +134,8 @@
 				000177241C8E725F008E3B26 /* DetailTabBarController.swift */,
 				00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */,
 				00B284551C93559300FE3D34 /* DetailImagesViewController.swift */,
-				00B284531C93551B00FE3D34 /* DetailDirectionsViewController.swift */,
-				00FCCC7B1C98F99C0010D652 /* RouteViewController.swift */,
+				00B284531C93551B00FE3D34 /* DetailMapViewController.swift */,
+				00FCCC7B1C98F99C0010D652 /* DirectionsViewController.swift */,
 				00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */,
 				00E3200E1C977617004DBE2D /* FavoritesViewController.swift */,
 				00E320101C97781E004DBE2D /* TrailEditorViewController.swift */,
@@ -314,14 +314,14 @@
 				00D95D721C88BE6800FE0D69 /* TrailsTableViewController.swift in Sources */,
 				000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */,
 				00D95D781C88C4AB00FE0D69 /* Trail.swift in Sources */,
-				00B284541C93551B00FE3D34 /* DetailDirectionsViewController.swift in Sources */,
+				00B284541C93551B00FE3D34 /* DetailMapViewController.swift in Sources */,
 				00E3200F1C977617004DBE2D /* FavoritesViewController.swift in Sources */,
 				00E3200B1C976A4C004DBE2D /* SWRevealViewController.m in Sources */,
 				00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */,
 				00D95D491C88BE1A00FE0D69 /* HikingJunkie.xcdatamodeld in Sources */,
 				00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */,
 				00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */,
-				00FCCC7C1C98F99C0010D652 /* RouteViewController.swift in Sources */,
+				00FCCC7C1C98F99C0010D652 /* DirectionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

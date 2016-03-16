@@ -16,7 +16,7 @@ class DetailTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         let infoVC = self.viewControllers![0] as! DetailInfoViewController
         let imagesVC = self.viewControllers![1] as! DetailImagesViewController
-        let directionsVC = self.viewControllers![2] as! DetailDirectionsViewController
+        let directionsVC = self.viewControllers![2] as! DetailMapViewController
         
         infoVC.selectedTrail = self.selectedTrail
         imagesVC.selectedTrail = self.selectedTrail

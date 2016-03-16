@@ -1,5 +1,5 @@
 //
-//  DetailDirectionsViewController.swift
+//  DetailMapViewController.swift
 //  HikingJunkie
 //
 //  Created by profile on 3/11/16.
@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class DetailMapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     var selectedTrail:Trail!
     @IBOutlet var mapView: MKMapView!
@@ -172,7 +172,7 @@ class DetailDirectionsViewController: UIViewController, CLLocationManagerDelegat
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "ShowDirections"{
-            let routeViewController = segue.destinationViewController as! RouteViewController
+            let routeViewController = segue.destinationViewController as! DirectionsViewController
             routeViewController.route = endAddrString
         }
     }

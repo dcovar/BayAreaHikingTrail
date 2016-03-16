@@ -1,5 +1,5 @@
 //
-//  RouteViewController.swift
+//  DirectionsViewController.swift
 //  HikingJunkie
 //
 //  Created by profile on 3/15/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RouteViewController: UIViewController {
+class DirectionsViewController: UIViewController {
 
     @IBOutlet weak var routeTextView: UITextView!
     

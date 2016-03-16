@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="2134.5" y="431"/>
         </scene>
-        <!--Directions-->
+        <!--Map-->
         <scene sceneID="hnn-hi-la3">
             <objects>
-                <viewController title="Directions" id="UjN-aE-km0" customClass="DetailDirectionsViewController" customModule="HikingJunkie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="UjN-aE-km0" customClass="DetailMapViewController" customModule="HikingJunkie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="weH-yC-Cnw"/>
                         <viewControllerLayoutGuide type="bottom" id="A3H-k8-m72"/>
@@ -322,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="2049" y="1214"/>
         </scene>
-        <!--Route View Controller-->
+        <!--Directions View Controller-->
         <scene sceneID="mCJ-fz-qAZ">
             <objects>
-                <viewController id="S77-xV-Vrv" customClass="RouteViewController" customModule="HikingJunkie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="S77-xV-Vrv" customClass="DirectionsViewController" customModule="HikingJunkie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yuf-jI-XMC"/>
                         <viewControllerLayoutGuide type="bottom" id="4vL-mB-SUR"/>
