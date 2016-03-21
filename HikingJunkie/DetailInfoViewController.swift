@@ -22,6 +22,7 @@ class DetailInfoViewController: UIViewController {
     @IBOutlet weak var detailsTextView: UITextView!
     @IBOutlet weak var favoritesLabel: UILabel!
     @IBOutlet weak var favoritesButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     @IBAction func editFavoritesAction(sender: AnyObject) {
         if selectedTrail.isFavorite == 0.0{
@@ -41,7 +42,7 @@ class DetailInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        selectedTrail.tName = "New Name"
+        
         if selectedTrail.isFavorite == 0.0{
             favoritesLabel.text = "Add to Favorites"
             favoritesButton.setImage(UIImage(named:"plus"), forState: .Normal)
@@ -53,11 +54,14 @@ class DetailInfoViewController: UIViewController {
         
         if(selectedTrail != nil){
             //Set the values of the text labels/text views
-            self.navigationController!.title = self.selectedTrail.tName!
+            self.nameLabel.text = self.selectedTrail.tName
+            self.nameLabel.textColor = UIColor(red: 114/255.0, green: 156/255.0, blue: 136/255.0, alpha: 1.0)
+            
+            
             self.addressLabel.text = self.selectedTrail.tAddress
             self.cityLabel.text = self.selectedTrail.tCity
-            self.phoneNumberLabel.text = String(self.selectedTrail.tPhoneNumber)
-            self.distanceLabel.text = String(self.selectedTrail.tDistance)
+            self.phoneNumberLabel.text = self.selectedTrail.tPhoneNumber
+            self.distanceLabel.text = self.selectedTrail.tDistance
             self.timeLabel.text = selectedTrail.tTime
             self.surfaceLabel.text = selectedTrail.tSurface
             self.difficultyLabel.text = selectedTrail.tDifficulty
@@ -75,15 +79,23 @@ class DetailInfoViewController: UIViewController {
                 if UIImage(contentsOfFile: imagePaths[i]) != nil{
                     uiImages.append(UIImage(contentsOfFile: imagePaths[i])!)
                 }
+                else if UIImage(named: images[i]) != nil{
+                    uiImages.append(UIImage(named: images[i])!)
+                }
                 else{
                     print("Error, contents not found in file: \(imagePaths[i])")
                 }
             }
             
             //Start the animation of images
-            self.pictureView.animationImages = uiImages
-            self.pictureView.animationDuration = Double(uiImages.count * 2)
-            self.pictureView.startAnimating()
+            if uiImages.count > 0{
+                self.pictureView.animationImages = uiImages
+                self.pictureView.animationDuration = Double(uiImages.count * 5)
+                self.pictureView.startAnimating()
+            }
+            else{
+                self.pictureView.image = UIImage(named: "not-found")
+            }
             
 
         }
