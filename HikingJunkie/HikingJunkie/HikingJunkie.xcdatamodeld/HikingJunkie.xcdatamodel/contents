@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Trail" representedClassName="Trail" syncable="YES">
+        <attribute name="isFavorite" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="tAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDifficulty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tName" attributeType="String" syncable="YES"/>
+        <attribute name="tPhoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tPictures" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tRules" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tSurface" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tTime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FavoritesFetchRequest" entity="Trail" predicateString="isFavorite == 0"/>
+    <elements>
+        <element name="Trail" positionX="-45" positionY="0" width="128" height="225"/>
+    </elements>
+</model>
