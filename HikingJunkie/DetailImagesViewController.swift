@@ -19,31 +19,46 @@ class DetailImagesViewController: UIViewController {
         self.title = "Images"
         
         
-        var x = CGFloat(100)
-        var y = CGFloat(100)
+        var x = CGFloat(0)
+        var y = CGFloat(0)
         
+        // Gets the path of the documents directory where the images are stored
        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
 
         let images = selectedTrail.tPictures!.componentsSeparatedByString(",")
         
         var imageViews :[UIImageView] = []
-        let textView = UITextView(frame: CGRect(x: x, y: y, width: imagesScrollView.frame.width/2, height: imagesScrollView.frame.height/2))
         for(var i = 0; i < (images.count - 1); i++){
             let imagePath = paths.stringByAppendingPathComponent(images[i])
+
+            var image = UIImage(contentsOfFile: imagePath)
+            // It the image path had no contents, check the xcassets
+            if(image == nil){
+                image = UIImage(named: images[i])
+            }
+            // If the image is still empty set it to the default image-not-found
+            if(image == nil){
+                image = UIImage(named: "not-found")
+            }
             
-            let image = UIImage(contentsOfFile: imagePath)
+            // Add an imageview to the array and customize it
+            imageViews.append(UIImageView(frame:CGRect(x: x, y:y, width:120, height:120)))
+            imageViews.last!.image = image
+            imageViews.last!.contentMode = UIViewContentMode.ScaleAspectFit
+            imageViews.last!.layer.borderWidth = 1
+            imageViews.last!.layer.borderColor = UIColor(red: 209/255, green: 222/255, blue:217/255, alpha: 1.0).CGColor
             
-            if image != nil{
-                imageViews.append(UIImageView(frame:CGRect(x: x, y:y, width:100, height:100)))
-                imageViews.last!.image = image
-                imageViews.last!.contentMode = UIViewContentMode.ScaleAspectFit
-            
-                imagesScrollView.addSubview(imageViews.last!)
-                imagesScrollView.contentMode = UIViewContentMode.ScaleAspectFit
+            // Add the imageview currently being worked on,  as a subview in the scroll view
+            imagesScrollView.addSubview(imageViews.last!)
+            imagesScrollView.contentMode = UIViewContentMode.ScaleAspectFit
+
+            // Determines the x and y coordinates of the next imageView
+            if(x == 240){
+                x = 0
+                y += 120
             }
             else{
-                textView.insertText("Could not find: \(images[i])\n")
-                imagesScrollView.addSubview(textView)
+                x += 120
             }
         }
     }
