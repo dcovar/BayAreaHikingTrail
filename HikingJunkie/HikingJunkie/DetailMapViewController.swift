@@ -126,6 +126,25 @@ class DetailMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
         directions.calculateDirectionsWithCompletionHandler{(routeResponse, routeError) in
             if routeError != nil{
                 print("Error: \(routeError?.localizedDescription)")
+                
+                // Determines what method of transportation was chosen in case there's an error, so that it can display that the method they chose has no available directions
+                var type:String
+                switch currentTransportType{
+                case MKDirectionsTransportType.Walking:
+                    type = "Walking"
+                    break
+                    
+                case MKDirectionsTransportType.Transit:
+                    type = "Transit"
+                    break
+                    
+                default:
+                    type = ""
+                }
+                let alert = UIAlertController(title: "Error", message:
+                    "\(type) directions not available" , preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler:nil))
+                self.presentViewController(alert, animated: true, completion: nil)
             }
             else{
                 let route = routeResponse?.routes[0] as MKRoute!

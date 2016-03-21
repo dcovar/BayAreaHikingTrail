@@ -18,11 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Navigation bar (Title) background color:
         UINavigationBar.appearance().barTintColor = UIColor(red: 91.0/255.0, green: 224.0/255.0, blue: 163.0/255.0, alpha: 0.3)
+        UITabBar.appearance().barTintColor = UIColor(red: 91.0/255.0, green: 224.0/255.0, blue: 163.0/255.0, alpha: 0.3)
         // Navigation bar (Title) font and color:
         if let barFont = UIFont(name: "Noteworthy-Bold", size: 22.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor(),NSFontAttributeName:barFont]
+            
             // Navigation bar button color:
             UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+            UITabBar.appearance().tintColor = UIColor.whiteColor()
             
             UIApplication.sharedApplication().statusBarStyle = .LightContent
         }

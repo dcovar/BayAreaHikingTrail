@@ -1,40 +1,31 @@
 //
-//  TrailEditorViewController.swift
+//  TrailNavigationViewController.swift
 //  HikingJunkie
 //
-//  Created by profile on 3/14/16.
+//  Created by David Orozco on 3/21/16.
 //  Copyright © 2016 DeAnza. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class TrailEditorViewController: UIViewController{
+class TrailNavigationViewController: UINavigationController {
 
+    var typeOfList:String = ""
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Add/Edit Trails"
-
-        //show side bar menu
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            self.revealViewController().rearViewRevealWidth = 170
-        }
+        // Tells the TableViewController whether to display the Home Screen or the Favorites
+        let tableVC = self.viewControllers[0] as! TrailsTableViewController
+        tableVC.typeOfList = self.typeOfList
         // Do any additional setup after loading the view.
-        
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation

@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000177241C8E725F008E3B26 /* DetailTabBarController.swift */; };
-		00136ED41C9B23B700085449 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00136ED31C9B23B700085449 /* FavoritesTableViewController.swift */; };
 		00895BFD1C8A138E000A7CE3 /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */; };
 		008D0A1E1C99E3AC00B61AA8 /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D0A1D1C99E3AC00B61AA8 /* DetailMapViewController.swift */; };
 		008D0A201C99E60F00B61AA8 /* DirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D0A1F1C99E60F00B61AA8 /* DirectionsViewController.swift */; };
 		008D0A221C9A04DE00B61AA8 /* TrailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D0A211C9A04DE00B61AA8 /* TrailTableViewCell.swift */; };
 		008E0DD51C98FFC1006F8D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008E0DD41C98FFC1006F8D81 /* Assets.xcassets */; };
 		009E92971C9C905E00CD09A6 /* Trail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009E92961C9C905E00CD09A6 /* Trail+CoreDataProperties.swift */; };
-		009E92991C9C937A00CD09A6 /* ForumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009E92981C9C937A00CD09A6 /* ForumTableViewController.swift */; };
 		00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B284551C93559300FE3D34 /* DetailImagesViewController.swift */; };
 		00B284581C935D2D00FE3D34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284571C935D2D00FE3D34 /* CoreLocation.framework */; };
 		00B2845A1C935D3E00FE3D34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B284591C935D3E00FE3D34 /* MapKit.framework */; };
@@ -30,6 +28,9 @@
 		00E3200B1C976A4C004DBE2D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200A1C976A4C004DBE2D /* SWRevealViewController.m */; };
 		00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3200C1C976B6D004DBE2D /* MenuViewController.swift */; };
 		00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E320101C97781E004DBE2D /* TrailEditorViewController.swift */; };
+		ABCF21A01C9FE7870096F46F /* TrailNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF219F1C9FE7870096F46F /* TrailNavigationViewController.swift */; };
+		ABCF21A21C9FEF040096F46F /* AddTrailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF21A11C9FEF040096F46F /* AddTrailViewController.swift */; };
+		ABCF21A81C9FF9FB0096F46F /* EditTrailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCF21A71C9FF9FB0096F46F /* EditTrailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +52,12 @@
 
 /* Begin PBXFileReference section */
 		000177241C8E725F008E3B26 /* DetailTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTabBarController.swift; sourceTree = "<group>"; };
-		00136ED31C9B23B700085449 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesTableViewController.swift; path = ../FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		00895BFC1C8A138E000A7CE3 /* DetailInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInfoViewController.swift; path = ../DetailInfoViewController.swift; sourceTree = "<group>"; };
 		008D0A1D1C99E3AC00B61AA8 /* DetailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		008D0A1F1C99E60F00B61AA8 /* DirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsViewController.swift; sourceTree = "<group>"; };
 		008D0A211C9A04DE00B61AA8 /* TrailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailTableViewCell.swift; sourceTree = "<group>"; };
 		008E0DD41C98FFC1006F8D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trashes/502/Assets.xcassets; sourceTree = "<group>"; };
 		009E92961C9C905E00CD09A6 /* Trail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trail+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		009E92981C9C937A00CD09A6 /* ForumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewController.swift; sourceTree = "<group>"; };
 		00B284551C93559300FE3D34 /* DetailImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailImagesViewController.swift; path = ../DetailImagesViewController.swift; sourceTree = "<group>"; };
 		00B284571C935D2D00FE3D34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00B284591C935D3E00FE3D34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -81,6 +80,9 @@
 		00E3200A1C976A4C004DBE2D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		00E3200C1C976B6D004DBE2D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		00E320101C97781E004DBE2D /* TrailEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailEditorViewController.swift; sourceTree = "<group>"; };
+		ABCF219F1C9FE7870096F46F /* TrailNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailNavigationViewController.swift; sourceTree = "<group>"; };
+		ABCF21A11C9FEF040096F46F /* AddTrailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrailViewController.swift; sourceTree = "<group>"; };
+		ABCF21A71C9FF9FB0096F46F /* EditTrailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTrailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +147,11 @@
 				008D0A1D1C99E3AC00B61AA8 /* DetailMapViewController.swift */,
 				008D0A1F1C99E60F00B61AA8 /* DirectionsViewController.swift */,
 				00D95D711C88BE6800FE0D69 /* TrailsTableViewController.swift */,
+				ABCF219F1C9FE7870096F46F /* TrailNavigationViewController.swift */,
 				008D0A211C9A04DE00B61AA8 /* TrailTableViewCell.swift */,
-				00136ED31C9B23B700085449 /* FavoritesTableViewController.swift */,
 				00E320101C97781E004DBE2D /* TrailEditorViewController.swift */,
-				009E92981C9C937A00CD09A6 /* ForumTableViewController.swift */,
+				ABCF21A11C9FEF040096F46F /* AddTrailViewController.swift */,
+				ABCF21A71C9FF9FB0096F46F /* EditTrailsTableViewController.swift */,
 				00E3200C1C976B6D004DBE2D /* MenuViewController.swift */,
 				00D95D441C88BE1A00FE0D69 /* Main.storyboard */,
 				008E0DD41C98FFC1006F8D81 /* Assets.xcassets */,
@@ -320,15 +323,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				008D0A221C9A04DE00B61AA8 /* TrailTableViewCell.swift in Sources */,
+				ABCF21A01C9FE7870096F46F /* TrailNavigationViewController.swift in Sources */,
 				00C61C281C9B4E7200703CFE /* Trail.swift in Sources */,
 				00D95D411C88BE1A00FE0D69 /* AppDelegate.swift in Sources */,
 				00E3200D1C976B6D004DBE2D /* MenuViewController.swift in Sources */,
+				ABCF21A21C9FEF040096F46F /* AddTrailViewController.swift in Sources */,
 				00D95D721C88BE6800FE0D69 /* TrailsTableViewController.swift in Sources */,
 				008D0A1E1C99E3AC00B61AA8 /* DetailMapViewController.swift in Sources */,
-				00136ED41C9B23B700085449 /* FavoritesTableViewController.swift in Sources */,
+				ABCF21A81C9FF9FB0096F46F /* EditTrailsTableViewController.swift in Sources */,
 				000177251C8E725F008E3B26 /* DetailTabBarController.swift in Sources */,
 				00C61C241C9B4C0200703CFE /* HikingJunkie.xcdatamodeld in Sources */,
-				009E92991C9C937A00CD09A6 /* ForumTableViewController.swift in Sources */,
 				00E3200B1C976A4C004DBE2D /* SWRevealViewController.m in Sources */,
 				00E320111C97781E004DBE2D /* TrailEditorViewController.swift in Sources */,
 				00B284561C93559300FE3D34 /* DetailImagesViewController.swift in Sources */,

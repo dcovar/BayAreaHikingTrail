@@ -13,5 +13,6 @@ import CoreData
 class Trail: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
+
     
 }

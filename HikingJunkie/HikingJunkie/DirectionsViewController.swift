@@ -20,6 +20,7 @@ class DirectionsViewController: UIViewController {
         self.title = "Directions"
         
 
+        // Populates the scroll view with a custom textview for each step
         var y = 0
         for(var i = 0; i < directions.count; i++){
             let tempView = UITextView(frame: CGRect(x:0, y:y, width:360, height:70))

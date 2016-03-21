@@ -13,11 +13,14 @@ class DetailTabBarController: UITabBarController {
     var selectedTrail:Trail!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.  
+        
+        // Get the tab bar controllers tab bar items to access their attributes
         let infoVC = self.viewControllers![0] as! DetailInfoViewController
         let imagesVC = self.viewControllers![1] as! DetailImagesViewController
         let directionsVC = self.viewControllers![2] as! DetailMapViewController
         
+        // Set the values of the tab bar items attributes
         infoVC.selectedTrail = self.selectedTrail
         imagesVC.selectedTrail = self.selectedTrail
         directionsVC.selectedTrail = self.selectedTrail
